@@ -2,14 +2,38 @@ body {
     margin: 0;  
 }
 
+/* HEADER */
+
+
 .header {
     background-color: pink;
     grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    display: flex;
-    min-width: fit-content;
-    flex-wrap: wrap;
+    grid-row: 1 / 2;  
 }
+
+.header-top {
+    display: grid;
+    grid-template-columns: 3fr 10% 10% 10%;   
+    align-items: center;
+    margin: 20px 20px;   
+}
+
+input {
+    width: 70%;
+}
+
+form {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
 
 .main-content {
     background-color: lightblue;
@@ -68,7 +92,7 @@ h2 img {
     margin: 40px 20px;
 }
 
-a {
+.sidebar a {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: #f3f3f3;
