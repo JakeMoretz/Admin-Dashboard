@@ -1,30 +1,133 @@
-body {
-    margin: 0;  
+* {
+    box-sizing: border-box;
 }
 
-/* HEADER */
+body {
+    margin: 0; 
+    
+}
+
+/* ************************************   TOP HEADER ************************************** */
 
 
 .header {
-    background-color: pink;
+    background-color:#0e7490;
     grid-column: 3 / 4;
     grid-row: 1 / 2;  
+    height: auto;
+}
+
+.container {
+  
+   
 }
 
 .header-top {
     display: grid;
-    grid-template-columns: 3fr 10% 10% 10%;   
+    grid-template-columns:repeat( auto-fit, minmax(60px, 1fr) );
     align-items: center;
-    margin: 20px 20px;   
+    margin: 20px 20px;  
 }
 
-input {
-    width: 70%;
+.header-top .search-img{
+    display: grid;
+    justify-content: flex-end;
+}
+
+.header-top a {
+    display: grid;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.header-top .name {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-top .profile {
+    
+}
+
+.header-top .alert{
+    display: grid;
+    justify-content: flex-end;
+
 }
 
 form {
-    display: flex;
+    grid-column: span 3;    
 }
+
+
+ form input {
+    width: 100%;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(214, 215, 215); 
+}
+
+
+
+/* ************************  BOTTOM HEADER *********************************** */
+
+
+
+
+.header-bottom {
+    /* height: 100px; */
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(90px, 1fr) );
+    align-items: center;
+}
+
+.header-bottom p {
+    
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.header-bottom .user-name {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+button {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    
+}
+
+.btn {
+    display: grid;
+    justify-content:center;
+    padding: 10px;
+}
+
+.header-bottom .btn-new {
+    display: grid;
+    justify-items: flex-end;
+}
+
+.intro {
+    grid-column: span 3;
+
+}
+
+.header-bottom .profile {
+    display: grid;
+    justify-content: center;
+}
+
+
 
 
 
@@ -41,7 +144,12 @@ form {
     grid-row: 2 / 3;
 }
 
-/* SIDEBAR / DASHBOARD */
+
+
+
+
+
+/* *******************************************  SIDEBAR  ****************************************** */
 
 .sidebar {
     background-color: #164e63;
@@ -54,8 +162,12 @@ form {
 .dashboard {
     height: 100vh;
     display: grid;
-    grid-template-columns:  10% 1fr 3fr 10%;
-    grid-template-rows: 20% 80%;
+    grid-template-columns:  1fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr;
+
+   
+    
+   
 }
 
 
