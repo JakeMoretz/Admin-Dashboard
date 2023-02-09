@@ -18,20 +18,101 @@ body {
     gap: 10px;   
 }
 
+/* ****************************************  SIDEBAR ***************************************** */
+
 .sidebar  {
+    padding-bottom: 20px;
     border-radius: 10px;
     background-color: rgb(38, 37, 37);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
+
+.item , .item-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
+    line-height: 2;  
+}
+
+h2 {
+    padding: 20px;  
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+h2 img {
+    height: 50px;
+}
+
+img {
+    height: 25px;
+}
+
+.link .img-color {
+    filter: invert(75%) sepia(6%) saturate(8%) hue-rotate(45deg) brightness(88%) contrast(90%);   
+}
+
+.link {
+    display: flex;
+    align-items: center;   
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;   
+}
+
+
+
+/* ****************************************  HEADER  ****************************************** */
+
+
 
 .header {
     background-color: rgb(38, 37, 37);
-    border-radius: 10px;    
+    border-radius: 10px;  
+    box-sizing: border-box;  
 }
+
+.header-top{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    padding: 10px;
+}
+
+
+div .alert {
+    grid-column: 5 / 6;
+}
+
+.name {
+    grid-column: span 2;
+}
+
+
+
+
 
 .main-content {
     background-color: rgb(38, 37, 37);
     border-radius: 10px;    
 }
+
+
+
+
+
+
+
 
 
 @media (min-width: 50em) {
@@ -53,11 +134,71 @@ body {
     .header {
         grid-column: 2 / span 3;
     }
-   
+  
+}
+
+@media (max-width: 800px) {
+
+    .item {
+       display: grid;
+       grid-template-columns: 1fr 150px 1fr;
+       grid-template-rows: repeat(6, 1fr);
+       justify-items: flex-start;
+       align-items: center;
+    }
+
+    .item-2 {
+        display: grid;
+        grid-template-columns: 1fr 150px 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: flex-start;
+        align-items: center;
+     }
+
+    .home-icon {
+        grid-column: 2;
+        grid-row: 1   
+    }
+
+    .profile-icon {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .message-icon {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .history-icon {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .task-icon {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    .community-icon {
+        grid-column: 2;
+        grid-row: 6;
+    }
+
+    .settings-icon {
+        grid-column: 2;
+    }
+
+    .support-icon {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .privacy-icon {
+        grid-column: 2;
+        grid-row: 3;
+    }
 }
 
 
 
-img {
-    height: 20px;
-}
