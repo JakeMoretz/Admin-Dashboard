@@ -1,0 +1,89 @@
+
+
+@media (min-width: 50em) {
+
+    .dashboard-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 5fr;      
+    }
+
+    .main-content {
+        grid-column: 2 / span 3;
+    }
+    
+    .sidebar  {
+        grid-column: 1;
+        grid-row: 1 / span 2;    
+    }
+
+    .header {
+        grid-column: 2 / span 3;
+    }
+  
+}
+
+@media (max-width: 800px) {
+
+    .item {
+       display: grid;
+       grid-template-columns: 1fr 150px 1fr;
+       grid-template-rows: repeat(6, 1fr);
+       justify-items: flex-start;
+       align-items: center;
+    }
+
+    .item-2 {
+        display: grid;
+        grid-template-columns: 1fr 150px 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: flex-start;
+        align-items: center;
+     }
+
+    .home-icon {
+        grid-column: 2;
+        grid-row: 1   
+    }
+
+    .profile-icon {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .message-icon {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .history-icon {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .task-icon {
+        grid-column: 2;
+        grid-row: 5;
+    }
+
+    .community-icon {
+        grid-column: 2;
+        grid-row: 6;
+    }
+
+    .settings-icon {
+        grid-column: 2;
+    }
+
+    .support-icon {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .privacy-icon {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+
+}
+
