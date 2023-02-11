@@ -14,7 +14,7 @@ body {
 
 .dashboard-grid {
     height: 100vh;
-    width: min(95%, 70rem);
+    width: min(95%, 80rem);
     display: grid;
     margin: auto;
     gap: 10px;   
@@ -122,8 +122,7 @@ div .alert {
 }
 
 #search-bar {
-    width: 100%;
-   
+    width: 100%;  
 }
 
 .search {
@@ -166,6 +165,10 @@ button {
     background-color: rgb(157, 155, 155);
     font-size: 15px;
 }
+ 
+.btn-share {
+    margin-right: 20px;
+}
 
 button:hover {
     background-color: rgb(11, 129, 129);
@@ -192,10 +195,30 @@ div .img-color {
     filter: invert(75%) sepia(6%) saturate(8%) hue-rotate(45deg) brightness(88%) contrast(90%); 
 }
 
+
+
+/* ****************************************  MAIN CONTENT ******************************************** */
+
+
+
+
 .main-content {
+    height: 100vh;
     background-color: rgb(38, 37, 37);
-    border-radius: 10px;    
+    border-radius: 10px;  
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 15px;
+    padding: 10px;
 }
+
+.main-content a {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 
 
 
