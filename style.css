@@ -154,7 +154,8 @@ input {
     display: grid;
     grid-template-columns: repeat(8, 1fr); 
     justify-items: center;
-    align-items: center;
+    align-items: end;
+    padding-bottom: 10px;
 }
 
 .btn-new {
@@ -170,10 +171,12 @@ button {
     margin: 5px;
     background-color: rgb(38, 37, 37);
     font-size: 15px;
+    
 }
  
 .btn-share {
     margin-right: 20px;
+   
 }
 
 button:hover {
