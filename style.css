@@ -60,6 +60,10 @@ img {
     filter: invert(75%) sepia(6%) saturate(8%) hue-rotate(45deg) brightness(88%) contrast(90%);   
 }
 
+.img-color2 {
+    filter: invert(60%) sepia(52%) saturate(389%) hue-rotate(3deg) brightness(95%) contrast(86%);
+}
+
 .link {
     display: flex;
     align-items: center;   
@@ -71,7 +75,6 @@ a {
 
 .sidebar a:hover {
     background: rgba(167, 164, 164, 0.3);
-    /* background-color: rgb(11, 129, 129, 0.3); */
     border-radius: 3px;   
 }
 
@@ -79,7 +82,9 @@ a {
 
 /* ****************************************  HEADER  ****************************************** */
 
-
+.user-name {
+    font-size: 20px;
+}
 
 .header {
     background-color: rgb(38, 37, 37);
@@ -88,7 +93,7 @@ a {
 
 .header-top{
     display: grid;
-    grid-template-columns: repeat(8, 1fr); 
+    grid-template-columns: repeat(7, 1fr); 
     padding: 10px;
     align-items: center;   
 }
@@ -101,7 +106,7 @@ div .alert {
 
 .profile {
     justify-self: end;
-    border: 1px solid;
+    border: none;
     border-radius: 50px;
     background-color: rgb(11, 129, 129);
     height: 50px;
@@ -160,7 +165,7 @@ button {
     height: 30px;
     width: 80px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid;
     color:rgb(186, 186, 186);
     margin: 5px;
     background-color: rgb(38, 37, 37);
@@ -216,8 +221,9 @@ div .img-color {
 
 .main-content a {
     border: 1px solid;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
+    border-left: 5px solid #bd9c55;
 }
 
 
@@ -350,6 +356,47 @@ hr {
 
 .title-1, .title-2, .title-3, h4, h3 {
     color:  rgb(17, 215, 215);
+}
+
+a .card{
+    height: 100% ;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+}
+
+.h3 {
+    grid-column: 1, 7;
+    grid-row: 1 /2;
+}
+
+.p {
+    grid-column: 1 / 7;
+    grid-row: 2 / 3;
+}
+
+.star {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    align-self: end;
+    
+}
+
+.star img, .eye img, .fork img {
+    height: 25px;
+    
+}
+
+.eye {
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
+    align-self: end;
+}
+
+.fork {
+    grid-column: 6 / 7;
+    grid-row: 3/ 4;
+    align-self: end;
 }
 
 
